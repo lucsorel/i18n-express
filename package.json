@@ -1,0 +1,30 @@
+{
+  "name": "i18n-express",
+  "version": "0.0.1",
+  "description": "An ExpressJs middleware to manage templates and URL routing for internalized web applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+     "path-to-regexp": "0.1.6"
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucsorel/i18n-express.git"
+  },
+  "keywords": [
+    "express",
+    "i18n",
+    "l10n",
+    "internationalization",
+    "localization",
+    "router"
+  ],
+  "author": "Luc Sorel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucsorel/i18n-express/issues"
+  },
+  "homepage": "https://github.com/lucsorel/i18n-express#readme"
+}
