@@ -2,13 +2,23 @@
   "name": "i18n-express",
   "version": "0.0.1",
   "description": "An ExpressJs middleware to manage templates and URL routing for internalized web applications.",
+  "author": "Luc Sorel",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec test/*tests.js"
   },
   "dependencies": {
      "path-to-regexp": "0.1.6"
    },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-env": "0.4.4",
+    "grunt-istanbul": "0.6.1",
+    "grunt-mocha-test": "0.12.7",
+    "istanbul": "0.3.17",
+    "jasmine-core": "2.3.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucsorel/i18n-express.git"
@@ -21,8 +31,6 @@
     "localization",
     "router"
   ],
-  "author": "Luc Sorel",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lucsorel/i18n-express/issues"
   },
