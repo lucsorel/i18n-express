@@ -1,0 +1,94 @@
+/** styles of the locale switcher directive */
+i18n-locale-selector {
+	display: block;
+	min-width: 7em;
+}
+i18n-locale-selector .dropdown-container {
+	width: 100%;
+	float: left;
+}
+i18n-locale-selector .dropdown-container .dropdown-display {
+	cursor: pointer;
+	border: 1px solid #DDD;
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+}
+i18n-locale-selector .dropdown-container .dropdown-display * {
+	height: 2em;
+	line-height: 2em;
+}
+i18n-locale-selector .dropdown-container .dropdown-display .placeholder {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	width: 100%;
+}
+i18n-locale-selector .dropdown-container .dropdown-display i {
+	float: right;
+	position: relative;
+	font-size: 1.125em;
+	font-weight: bold;
+	padding-right: 0.5em;
+}
+i18n-locale-selector .dropdown-container.show .dropdown-list {
+	transform: scale(1, 1);
+}
+i18n-locale-selector .dropdown-container .dropdown-list {
+	float: left;
+	position: relative;
+	width: 100%;
+	transform: scale(1, 0);
+	transition: transform 250ms ease 0s;
+}
+i18n-locale-selector .dropdown-container .dropdown-list div {
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	cursor: pointer;
+	background: #FFF none repeat scroll 0% 0%;
+}
+i18n-locale-selector .dropdown-container .dropdown-list div .locale {
+	width: 100%;
+	border-style: none solid solid;
+	border-color: -moz-use-text-color #DDD #DDD;
+	box-sizing: border-box;
+	border-width: medium 1px 1px;
+	border-image: none;
+	padding: 0 0.5em;
+	float: left;
+	font-size: 0.9em;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	position: relative;
+}
+i18n-locale-selector .dropdown-container .dropdown-list div .locale * {
+	height: 2em;
+	line-height: 2em !important;
+	display: inline-block;
+	vertical-align: middle;
+}
+i18n-locale-selector .dropdown-container .dropdown-list div .locale span {
+	float: left;
+	width: 100%;
+	position: relative;
+	padding-right: 0.5em;
+	box-sizing: border-box;
+	color: inherit;
+}
+i18n-locale-selector .dropdown-container .dropdown-list div .locale.i18n-selected {
+	background: #2875C7 none repeat scroll 0% 0%;
+	color: #FFF;
+}
+i18n-locale-selector .dropdown-container .dropdown-list div .locale i {
+	float: left;
+	width: 0.5em;
+	margin-left: -1em;
+	display: none;
+}
+i18n-locale-selector .dropdown-container .dropdown-list div .locale.i18n-selected i {
+	display: inline-block;
+}
