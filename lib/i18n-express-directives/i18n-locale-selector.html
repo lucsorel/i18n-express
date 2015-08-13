@@ -1,13 +1,13 @@
 <div class="dropdown-container" ng-class="{ show: areLocalesVisible }">
 	<div class="dropdown-display i18n-display" ng-click="!areLocalesVisible && show();">
-		<span class="placeholder i18n-display">{{currentLocale.name}}</span>
+		<span class="placeholder i18n-display">{{::currentLocale.name}}</span>
 		<i class="fa fa-angle-down i18n-display"></i>
 	</div>
 	<div class="dropdown-list">
 		<div>
 			<div class="locale" ng-repeat="locale in locales" ng-click="!locale.current && select(locale)"
                 ng-class="{ 'i18n-selected': locale.current }">
-				<span ng-class="{ 'i18n-selected': locale.current }">{{locale.name}}</span>
+				<span ng-class="{ 'i18n-selected': locale.current }">{{::locale.name}}</span>
 				<i class="fa fa-check" ng-class="{ 'i18n-selected': locale.current }"></i>
 			</div>
 		</div>
