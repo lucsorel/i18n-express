@@ -26,6 +26,7 @@ i18n-locale-selector .dropdown-container .dropdown-display .placeholder {
 	width: 100%;
 }
 i18n-locale-selector .dropdown-container .dropdown-display i {
+	float: right;
 	position: relative;
 	font-size: 1.125em;
 	font-weight: bold;
