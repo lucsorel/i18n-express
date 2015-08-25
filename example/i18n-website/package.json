@@ -1,6 +1,6 @@
 {
   "name": "i18n-website",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A sample website and single-page application internationalized with i18n-express.",
   "author": "Luc Sorel",
   "license": "MIT",
@@ -17,7 +17,19 @@
     "i18n"
   ],
   "dependencies": {
-    "express": "^4.13.3",
+    "express": "4.13.3",
     "i18n-express": "lucsorel/i18n-express"
+  },
+  "devDependencies": {
+      "browserify": "10.2.4",
+      "browserify-shim": "3.8.9",
+      "uglify-js": "2.4.24",
+      "watchify": "3.3.1",
+      "lodash": "3.10.0"
+  },
+  "scripts": {
+    "dir-js": "if [ ! -d  public/js ]; then mkdir -p  public/js; elif [ `ls -A  public/js` ]; then rm -r public/js/*; fi",
+    "build-js": "browserify webapp/LocaleSelectorApp.js | uglifyjs -mc > public/js/locale-selector.js",
+    "prestart": "npm run dir-js && npm run build-js"
   }
 }

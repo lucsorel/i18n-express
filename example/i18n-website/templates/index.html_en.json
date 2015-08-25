@@ -2,5 +2,12 @@
     "index-meta-description": "A website demonstrating how to benefit of i18n-express to internationalize its content.",
 	"index-meta-keywords": "internationalization,express,website,web application",
 	"index-meta-title": "I18n-express demonstration website.",
-    "welcome-title": "Welcome on the i18n-express demonstration website"
+    "header-demosite": "I18n-express demo site",
+    "header-menu-home": "Home",
+    "header-menu-ngdemo": "__{1:ng} app demo",
+    "splash-demosite": "I18n-express demonstration site",
+    "splash-subhead": "Internationalize a public website or a single-page web app",
+    "splash-get-started": "Let's get started! (__{1:gh} doc)",
+    "welcome-title": "Welcome on the i18n-express demonstration website",
+    "footer": "View the templates of this demo site to learn more about i18n-express."
 }

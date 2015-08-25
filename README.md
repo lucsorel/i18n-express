@@ -12,9 +12,9 @@ npm install github:lucsorel/i18n-express --save
 A demo website can be found in the `example/i18n-website` folder.
 * install its dependencies (ExpressJS) with the `npm i` command
 * run it with `npm start`
-* open [localhost:3000](http://localhost:3000) in your browser
+* open [localhost:3001](http://localhost:3001) in your browser
 
-This sample website is designed to support the `en` and the `fr` locales (`en` by default). Depending on the preferred locale set in your browser, you will be redirected to either [localhost:3000/en/](http://localhost:3000/en/) or  [localhost:3000/fr/](http://localhost:3000/fr/). You can change the URL manually to test the translation.
+This sample website is designed to support the `en` and the `fr` locales (`en` by default). Depending on the preferred locale set in your browser, you will be redirected to either [localhost:3001/en/](http://localhost:3001/en/) or  [localhost:3001/fr/](http://localhost:3001/fr/). You can change the URL manually to test the translation.
 
 The `example/i18n-website/templates` folder contains the html templates and their related internationalization JSON resources files (one per locale).
 

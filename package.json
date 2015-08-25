@@ -1,6 +1,6 @@
 {
   "name": "i18n-express",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "An ExpressJs middleware to internationalize templates and manage URL routing for internalized web applications.",
   "author": "Luc Sorel",
   "license": "MIT",

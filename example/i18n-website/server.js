@@ -11,6 +11,13 @@ i18n.options.supportedLocales = ['en', 'fr'];
 i18n.options.defaultLocale = i18n.options.supportedLocales[0];
 i18n.options.viewsDirectory = __dirname + '/templates';
 
+// serves the CSS resources for the locale selector directive
+website.use(express.static('node_modules/i18n-express/lib/i18n-express-directives'));
+// serves the javascript files browserified from webapp by package.json.scripts.postinstall.prestart
+website.use(express.static('public'));
+// serves other media resources (CSS)
+website.use(express.static('media'));
+
 // instantiates a router and its route URL
 var i18nRouter = express.Router();
 var routerUseUrl = '/';
@@ -21,8 +28,8 @@ i18n.l10nRoutes(i18nRouter, 'index.html', routerUseUrl, '/', ['index', 'index.ht
 website.use(routerUseUrl, i18nRouter);
 
 // starts the web aplication server
-http.listen(3000, function() {
-    console.log('listening on *:3000');
+http.listen(3001, function() {
+    console.log('listening on *:3001');
 });
 
 /** closes the database and the application */

@@ -11,8 +11,100 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>__{index-meta-title}</title>
 		<link rel="canonical" href="__{canonicalUrl}" />
+		<link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css" />
+		<link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css" />
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+		<link rel="stylesheet" href="//purecss.io/combo/1.18.13?/css/layouts/marketing.css" />
+		<link rel="stylesheet" href="/css/demo-site.css" />
+
+		<!-- i18n-express-directive CSS -->
+		<link rel="stylesheet" href="/i18n-express-directives.css" />
+		<!-- browserified js app wrapping the locale selector directive -->
+		<script src="/js/locale-selector.js"></script>
 	</head>
 	<body>
+		<div class="header">
+		    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+		        <a class="pure-menu-heading" href="">__{header-demosite}</a>
+
+		        <ul class="pure-menu-list">
+		            <li class="pure-menu-item pure-menu-selected">
+						<a href="#" class="pure-menu-link">__{header-menu-home}</a>
+					</li>
+		            <li class="pure-menu-item">
+						<a href="#" class="pure-menu-link">__{header-menu-ngdemo%%AngularJS%%}</a>
+					</li>
+					<li class="pure-menu-item" ng-app="LocaleSelectorApp" ng-jq="" ng-strict-di="">
+						<i18n-locale-selector locales='[{"id":"en","name":"English"},{"id":"fr","name":"Français"}]' />
+					</li>
+		        </ul>
+		    </div>
+		</div>
+
+		<div class="splash-container">
+		    <div class="splash">
+		        <h1 class="splash-head">__{splash-demosite}</h1>
+		        <p class="splash-subhead">
+		            __{splash-subhead}
+		        </p>
+		        <p>
+		            <a href="http://purecss.io" class="pure-button pure-button-primary">__{splash-get-started%%Github%%}</a>
+		        </p>
+		    </div>
+		</div>
+
+		<div class="content-wrapper">
+		    <div class="content">
+		        <h2 class="content-head is-center">
+					__{welcome-title}
+				</h2>
+
+		        <div class="pure-g">
+		            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+		                <h3 class="content-subhead">
+		                    <i class="fa fa-rocket"></i>
+		                    Get Started Quickly
+		                </h3>
+		                <p>
+		                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+		                </p>
+		            </div>
+		            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+		                <h3 class="content-subhead">
+		                    <i class="fa fa-mobile"></i>
+		                    Responsive Layouts
+		                </h3>
+		                <p>
+		                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+		                </p>
+		            </div>
+		            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+		                <h3 class="content-subhead">
+		                    <i class="fa fa-th-large"></i>
+		                    Modular
+		                </h3>
+		                <p>
+		                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+		                </p>
+		            </div>
+		            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+		                <h3 class="content-subhead">
+		                    <i class="fa fa-check-square-o"></i>
+		                    Plays Nice
+		                </h3>
+		                <p>
+		                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+
+		    <div class="footer l-box is-center">
+		        __{footer}
+		    </div>
+
+		</div>
         <h1>__{welcome-title}</h1>
 	</body>
 </html>
