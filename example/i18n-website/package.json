@@ -1,6 +1,6 @@
 {
   "name": "i18n-website",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A sample website and single-page application internationalized with i18n-express.",
   "author": "Luc Sorel",
   "license": "MIT",

@@ -9,5 +9,11 @@
     "splash-subhead": "Internationalize a public website or a single-page web app",
     "splash-get-started": "Let's get started! (__{1:gh} doc)",
     "welcome-title": "Welcome on the i18n-express demonstration website",
+    "get-started-title": "Get started quickly",
+    "get-started-content": "Just add i18n-express to your project and tells the URL you want to internationalize, even 404 pages",
+    "progressive-modular-title": "Progressive and modular",
+    "progressive-modular-content": "Add the URLs to internationalize progressively and translate your templates as you go.<br />One translation file per URL and per locale, each translation key can involve values to be included in the translation.",
+    "powerful-title": "Powerful",
+    "powerful-content": "I18n-express translates your templates with powerful and fast regular expressions. Built-in translation keys are provided to merge the locale in use or the canonical URL in your template.<br />Smart locale detection: i18n-express detects the best locale to use from the browser headers, for single-page app, the host URL already tells the locale to use.",
     "footer": "View the templates of this demo site to learn more about i18n-express."
 }
