@@ -6,7 +6,11 @@
   "license": "MIT",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dir-js": "if [ ! -d  public/js ]; then mkdir -p  public/js; elif [ \"$(ls -A public/js)\" ]; then rm -r public/js/*; fi",
+    "build-uglyfied-js": "browserify webapp/LocaleSelectorApp.js | uglifyjs -mc > public/js/locale-selector.js & browserify webapp/TodoApp.js | uglifyjs -mc > public/js/todo-app.js",
+    "build-js": "browserify webapp/LocaleSelectorApp.js > public/js/locale-selector.js & browserify webapp/TodoApp.js > public/js/todo-app.js",
+    "build-webapp-js": "browserify webapp/TodoApp.js > public/js/todo-app.js",
+    "prestart": "npm run dir-js && npm run build-uglyfied-js"
   },
   "keywords": [
     "i18n-express",
@@ -21,15 +25,12 @@
     "i18n-express": "lucsorel/i18n-express"
   },
   "devDependencies": {
-      "browserify": "10.2.4",
-      "browserify-shim": "3.8.9",
-      "uglify-js": "2.4.24",
-      "watchify": "3.3.1",
-      "lodash": "3.10.0"
-  },
-  "scripts": {
-    "dir-js": "if [ ! -d  public/js ]; then mkdir -p  public/js; elif [ `ls -A  public/js` ]; then rm -r public/js/*; fi",
-    "build-js": "browserify webapp/LocaleSelectorApp.js | uglifyjs -mc > public/js/locale-selector.js",
-    "prestart": "npm run dir-js && npm run build-js"
+    "angular": "1.4.7",
+    "browserify": "10.2.4",
+    "browserify-shim": "3.8.9",
+    "lodash": "3.10.0",
+    "uglify-js": "2.4.24",
+    "ui-router": "0.2.15",
+    "watchify": "3.3.1"
   }
 }

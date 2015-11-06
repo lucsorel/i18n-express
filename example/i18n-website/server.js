@@ -9,7 +9,7 @@ var http = require('http').Server(website);
 var i18n = require('i18n-express')();
 i18n.options.supportedLocales = ['en', 'fr'];
 i18n.options.defaultLocale = i18n.options.supportedLocales[0];
-i18n.options.viewsDirectory = __dirname + '/templates';
+i18n.options.viewsDirectory = __dirname + '/views';
 
 // serves the CSS resources for the locale selector directive
 website.use(express.static('node_modules/i18n-express/lib/i18n-express-directives'));
@@ -22,10 +22,18 @@ website.use(express.static('media'));
 var i18nRouter = express.Router();
 var routerUseUrl = '/';
 
-/* i18n routes */
-// landing page
+/* i18n pages routes */
 i18n.l10nRoutes(i18nRouter, 'index.html', routerUseUrl, '/', ['index', 'index.html']);
+i18n.l10nRoutes(i18nRouter, 'app.html', routerUseUrl, '/webapp/');
 website.use(routerUseUrl, i18nRouter);
+
+/* i18n template routes */
+var i18nTplRouter = express.Router();
+var tplRouterUseUrl = '/tpl';
+var refererLocalePattern = '/:locale/webapp/';
+i18n.l10nRefererRoute(i18nTplRouter, 'tpl-items.html', tplRouterUseUrl, '/items.html', refererLocalePattern);
+i18n.l10nRefererRoute(i18nTplRouter, 'tpl-details.html', tplRouterUseUrl, '/details.html', refererLocalePattern);
+website.use(tplRouterUseUrl, i18nTplRouter);
 
 // starts the web aplication server
 http.listen(3001, function() {

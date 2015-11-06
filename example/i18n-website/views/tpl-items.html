@@ -1,0 +1,15 @@
+<div>
+    <br />
+    <br />
+    <br />
+    <h1>__{todos}</h1>
+    <div ng-repeat="item in itemsCtrl.items track by item.id">
+        <label>
+            <input type="checkbox" ng-model="item.done">
+            {{item.label}}
+        </label>
+        <a class="pure-button button-xsmall" ui-sref="items.detail({ itemId: item.id })">__{action-view-details}</a>
+    </div>
+
+    <div ui-view="detail"></div>
+</div>

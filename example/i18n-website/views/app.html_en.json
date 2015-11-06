@@ -1,0 +1,9 @@
+{
+    "webapp-meta-description": "An AngularJS webapplication demonstrating how to benefit of i18n-express to internationalize its templates.",
+	"webapp-meta-keywords": "internationalization,express,website,web application,angularjs,template",
+	"webapp-meta-title": "I18n-express demonstration webapplication.",
+    "header-demosite": "I18n-express demo web application",
+    "header-menu-home": "Home",
+    "header-menu-ngdemo": "__{1:ng} webapp demo",
+    "footer": "View the templates of this demo web application to learn more about i18n-express."
+}

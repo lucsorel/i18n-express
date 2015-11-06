@@ -1,6 +1,9 @@
 .pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited {
-    color: #6FBEF3;
+    color: #FFFFFF;
 }
 .pure-menu-heading {
     float: left;
+}
+.button-xsmall {
+    font-size: 70%;
 }

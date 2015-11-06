@@ -4,7 +4,7 @@
 	"index-meta-title": "I18n-express demonstration website.",
     "header-demosite": "I18n-express demo site",
     "header-menu-home": "Home",
-    "header-menu-ngdemo": "__{1:ng} app demo",
+    "header-menu-ngdemo": "__{1:ng} webapp demo",
     "splash-demosite": "I18n-express demonstration site",
     "splash-subhead": "Internationalize a public website or a single-page web app",
     "splash-get-started": "Let's get started! (__{1:gh} doc)",
