@@ -1,0 +1,8 @@
+{
+	"404-meta-title": "?!? 404",
+	"header-demosite": "I18n-express demo site",
+    "header-menu-home": "Home",
+    "header-menu-ngdemo": "__{1:ng} webapp demo",
+	"404-page-not-found": "The page you are trying to reach does not exist. Enjoy this moment of loneliness and quietness to meditate about what you want to do :)",
+	"404-footer": "View the templates of this demo site to learn more about i18n-express."
+}

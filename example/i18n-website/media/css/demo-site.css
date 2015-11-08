@@ -7,3 +7,24 @@
 .button-xsmall {
     font-size: 70%;
 }
+.main-wrapper {
+    margin: 74px auto 0px;
+    width: 80%;
+}
+/* 404 styling */
+.notfound-wrapper {
+    margin-top: 2em;
+	text-align: center;
+	color: #1b6096;
+	font-size: 3em;
+}
+.not-found-background {
+    background: url('zen.jpg') no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+footer.not-found {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

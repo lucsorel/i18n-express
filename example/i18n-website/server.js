@@ -35,6 +35,9 @@ i18n.l10nRefererRoute(i18nTplRouter, 'tpl-items.html', tplRouterUseUrl, '/items.
 i18n.l10nRefererRoute(i18nTplRouter, 'tpl-details.html', tplRouterUseUrl, '/details.html', refererLocalePattern);
 website.use(tplRouterUseUrl, i18nTplRouter);
 
+// manages 404
+website.use(i18n.l10n404('404.html'));
+
 // starts the web aplication server
 http.listen(3001, function() {
     console.log('listening on *:3001');
