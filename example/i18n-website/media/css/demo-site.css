@@ -18,6 +18,15 @@
     color: #1B6096;
     border-color: #1B6096;
 }
+.content-head {
+    margin-top: 1em;
+}
+a.discrete-link {
+    color: #1B6096;
+}
+a.discrete-link:hover {
+    color: #6FBEF3;
+}
 .button-xsmall {
     font-size: 70%;
     float: right;
