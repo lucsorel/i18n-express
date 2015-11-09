@@ -9,13 +9,14 @@
     "dir-js": "if [ ! -d  public/js ]; then mkdir -p  public/js; elif [ \"$(ls -A public/js)\" ]; then rm -r public/js/*; fi",
     "build-uglyfied-js": "browserify webapp/LocaleSelectorApp.js | uglifyjs -mc > public/js/locale-selector.js & browserify webapp/TodoApp.js | uglifyjs -mc > public/js/todo-app.js",
     "build-js": "browserify webapp/LocaleSelectorApp.js > public/js/locale-selector.js & browserify webapp/TodoApp.js > public/js/todo-app.js",
-    "build-webapp-js": "browserify webapp/TodoApp.js > public/js/todo-app.js",
     "prestart": "npm run dir-js && npm run build-uglyfied-js"
   },
   "keywords": [
     "i18n-express",
     "sample",
+    "demonstration",
     "website",
+    "web application",
     "expressjs",
     "internationalization",
     "i18n"

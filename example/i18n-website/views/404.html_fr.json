@@ -3,6 +3,6 @@
     "header-demosite": "Site de démo de i18n-express",
     "header-menu-home": "Accueil",
     "header-menu-ngdemo": "Démo avec __{1:ng}",
-    "404-page-not-found": "La page que vous souhaitez atteindre n'existe pas. Profitez de ce moment de solitude et de calme pour méditer sur ce quet vous voulez faire :)",
+    "404-page-not-found": "La page que vous souhaitez atteindre n'existe pas. Profitez de ce moment de solitude et de calme pour méditer sur ce que vous voulez faire :)",
     "404-footer": "Jetez un œil aux templates de ce site de démo pour en savoir plus sur i18n-express."
 }

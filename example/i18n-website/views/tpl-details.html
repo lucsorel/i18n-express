@@ -1,3 +1,21 @@
-<div>
-    item details
+<div class="pure-u-1 items-wrapper pure-u-sm-1-2 l-box">
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <h2>__{details-title}</h2>
+            <label>__{details-label}
+                <textarea class="pure-input-1 resize-vertical" placeholder="__{details-label-placeholder}"
+                    ng-model="detailsCtrl.item.label"></textarea>
+            </label>
+
+            <label>__{details-description}
+                <textarea class="pure-input-1 resize-vertical" placeholder="__{details-description-placeholder}"
+                    ng-model="detailsCtrl.item.description"></textarea>
+            </label>
+
+            <a class="pure-button button-xsmall" ui-sref="items">__{details-leave-action}</a>
+            <a class="pure-button button-xsmall button-error" ng-click="detailsCtrl.delete()">
+                <i class="fa fa-trash"></i> __{item-delete-action}
+            </a>
+        </fieldset>
+    </form>
 </div>

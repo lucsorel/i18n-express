@@ -6,14 +6,29 @@
 }
 .button-xsmall {
     font-size: 70%;
+    float: right;
+    margin-left: 0.5em;
 }
 .main-wrapper {
     margin: 74px auto 0px;
     width: 80%;
 }
+textarea.resize-vertical {
+    resize: vertical;
+}
+.items-wrapper {
+    transition: width .5s ease;
+}
+.button-error {
+    background: rgb(202, 60, 60);
+}
+.pure-form label {
+    font-weight: inherit;
+}
 /* 404 styling */
 .notfound-wrapper {
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 	text-align: center;
 	color: #1b6096;
 	font-size: 3em;
@@ -23,7 +38,7 @@
     background-size: cover;
     background-clip: border-box;
 }
-footer.not-found {
+.footer.bottom {
     position: absolute;
     bottom: 0;
     width: 100%;

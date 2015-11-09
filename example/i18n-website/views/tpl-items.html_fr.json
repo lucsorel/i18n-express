@@ -1,4 +1,9 @@
 {
     "todos": "À faire &nbsp;",
-    "action-view-details": "Détails"
+    "view-details-action": "Détails",
+    "items-done": "Résumé : __{1:done} items effectués parmi __{2:total}.",
+    "additem-title": "Ajoutez un item",
+    "additem-placeholder": "Nom de l'item",
+    "additem-action": "Ajouter un item",
+    "additem-set_label-warning": "Le libellé de l'item doit être défini."
 }

@@ -1,15 +1,43 @@
 <div>
-    <br />
-    <br />
-    <br />
-    <h1>__{todos}</h1>
-    <div ng-repeat="item in itemsCtrl.items track by item.id">
-        <label>
-            <input type="checkbox" ng-model="item.done">
-            {{item.label}}
-        </label>
-        <a class="pure-button button-xsmall" ui-sref="items.detail({ itemId: item.id })">__{action-view-details}</a>
+    <div class="pure-g">
+        <div class="pure-u-1 items-wrapper" ng-class="itemsCtrl.display.details ? 'pure-u-sm-1-2' : ''">
+            <h1>__{todos}</h1>
+            <div class=" l-box">
+                <div ng-repeat="item in itemsCtrl.items track by item.id">
+                    <label>
+                        <input type="checkbox" ng-model="item.done">
+                        {{item.label}}
+                    </label>
+                    <a class="pure-button button-xsmall" ui-sref="items.detail({ itemId: item.id })">__{view-details-action}</a>
+                </div>
+                <p>
+                    __{items-done%%{{(itemsCtrl.items | filter: {done: true}).length }}%%{{itemsCtrl.items.length}}%%}
+                </p>
+            </div>
+        </div>
+
+        <span ui-view="detail"></span>
     </div>
 
-    <div ui-view="detail"></div>
+    <h1>__{additem-title}</h1>
+    <form name="addItem" class="pure-form" method="post" novalidate="" ng-submit="addItem.$valid && itemsCtrl.addItem() && addItem.$setPristine()">
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-sm-1-2 l-box">
+                <label>
+                    <input type="text" name="label" ng-model="itemsCtrl.newItem.label" placeholder="__{additem-placeholder}"
+                        required="">
+                    <span class="pure-button button-error"
+                        ng-show="addItem.$submitted && addItem.label.$error.required">
+                        __{additem-set_label-warning}
+                    </span>
+                </label>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1-4 l-box">
+                <button type="submit" class="pure-button pure-button-primary">
+                    <i class="fa fa-plus-circle"></i> __{additem-action}
+                </button>
+            </div>
+        </div>
+    </form>
+
 </div>

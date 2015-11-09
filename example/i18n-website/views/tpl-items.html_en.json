@@ -1,4 +1,9 @@
 {
     "todos": "To do",
-    "action-view-details": "Details"
+    "view-details-action": "Details",
+    "items-done": "Summary: __{1:done} items done out of __{2:total}.",
+    "additem-title": "Add an item",
+    "additem-placeholder": "Item name",
+    "additem-action": "Add an item",
+    "additem-set_label-warning": "A label must be set to the item."
 }
