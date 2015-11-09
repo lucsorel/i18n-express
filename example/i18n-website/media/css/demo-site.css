@@ -4,6 +4,20 @@
 .pure-menu-heading {
     float: left;
 }
+.splash-container {
+    background: url('zen.jpg') no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+.splash {
+    width: 80%;
+    top: 0;
+}
+.splash-head, .splash-subhead {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #1B6096;
+    border-color: #1B6096;
+}
 .button-xsmall {
     font-size: 70%;
     float: right;
