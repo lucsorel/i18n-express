@@ -1,9 +1,0 @@
-{
-    "details-title": "Détails de l'item",
-    "details-label": "Libellé",
-    "details-label-placeholder": "Nom de l'item",
-    "details-description": "Description",
-    "details-description-placeholder": "Plus de détails sur cet item",
-    "item-delete-action": "Supprimer",
-    "details-leave-action": "Masquer les détails"
-}
