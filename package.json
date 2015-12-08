@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec test/*tests.js"
+    "test": "mocha -R spec test/*/*tests.js"
   },
   "dependencies": {
      "path-to-regexp": "0.1.6"
